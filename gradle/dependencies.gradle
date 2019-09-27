@@ -30,7 +30,7 @@ ext {
 
 // Add Scala version
 def defaultScala211Version = '2.11.12'
-def defaultScala212Version = '2.12.10'
+def defaultScala212Version = '2.12.8'
 if (hasProperty('scalaVersion')) {
   if (scalaVersion == '2.11') {
     versions["scala"] = defaultScala211Version
@@ -49,7 +49,7 @@ versions["baseScala"] = versions.scala.substring(0, versions.scala.lastIndexOf("
 versions += [
   activation: "1.1.1",
   akka: "2.5.25",
-  akkaHttp: "10.1.9",
+  akkaHttp: "10.1.10",
   apacheda: "2.0.0.AM2",
   apacheds: "2.0.0.AM25",
   argparse4j: "0.8.1",
@@ -60,8 +60,8 @@ versions += [
   grgit: "3.1.1",
   httpclient: "4.5.10",
   easymock: "4.0.2",
-  jackson: "2.9.9",
-  jacksonDatabind: "2.9.9.3",
+  jackson: "2.9.10",
+  jacksonDatabind: "2.9.10",
   jacoco: "0.8.4",
   jetty: "9.4.20.v20190813",
   jersey: "2.29.1",
@@ -87,9 +87,9 @@ versions += [
   mavenArtifact: "3.6.2",
   metrics: "4.1.0",
   mockito: "2.28.2",
-  owaspDepCheckPlugin: "5.2.1",
+  owaspDepCheckPlugin: "5.2.2",
   powermock: "2.0.2",
-  prometheus: "0.6.0",
+  prometheus: "0.7.0",
   prometheusAkkaHttp: "0.4.0",
   reflections: "0.9.11",
   rocksDB: "5.18.34",
@@ -102,7 +102,7 @@ versions += [
   snappy: "1.1.7.3",
   spotbugs: "3.1.12",
   spotbugsPlugin: "2.0.0",
-  spotlessPlugin: "3.24.2",
+  spotlessPlugin: "3.24.3",
   zkclient: "0.11",
   zookeeper: "3.5.6-bitpusher1",
   zstd: "1.4.3-1"
