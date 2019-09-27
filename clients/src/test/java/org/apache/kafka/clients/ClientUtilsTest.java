@@ -75,7 +75,7 @@ public class ClientUtilsTest {
 
     @Test(expected = ConfigException.class)
     public void testOnlyBadHostname() {
-        checkWithoutLookup("some.invalid.hostname.foo.bar.local:9999");
+        checkWithoutLookup("some.invalid.hostname.foo.bar.local.:9999");
     }
 
     @Test
@@ -98,7 +98,7 @@ public class ClientUtilsTest {
 
     @Test(expected = UnknownHostException.class)
     public void testResolveUnknownHostException() throws UnknownHostException {
-        ClientUtils.resolve("some.invalid.hostname.foo.bar.local", ClientDnsLookup.DEFAULT);
+        ClientUtils.resolve("some.invalid.hostname.foo.bar.local.", ClientDnsLookup.DEFAULT);
     }
 
     @Test
